@@ -18,10 +18,18 @@ export default (() => {
 
   if (square) {
     square.addEventListener("click", () => {
-
+      var rand=Math.random();
+      console.log(rand);
       // En la siguiente línea se añade una clase "active" al elemento HTML que tiene
       // una id "square" si no tiene la clase, y se la quita si la tiene.  
-      square.classList.toggle("active");
+      if(rand<=0.33){
+        square.classList.toggle("active1");
+      } else if((rand<=0.66) && (rand>0.33)){
+        square.classList.toggle("active2");
+      } else {
+        square.classList.toggle("active3");
+      }
+
     });
   }
 

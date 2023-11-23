@@ -10,7 +10,12 @@
     <meta name="keywords" content="palabras clave, separadas, por comas">
 
     <link href="main.css" rel="stylesheet">
-    <script type="module" src="app.js"></script>
+    <!-- hay async hay defer que es la buena que pilla el js y lo descarga mientras el html pero solo lo ejecuta cuando termina el html -->
+    <!-- pero lo bueno es el module que lo que hace es tener el defer pero ademas permite importar cosas en este caso tabs y menu-nutton.js -->
+    <!-- un modulo significa que en menu button tiene un metodo export. de este metodo lo modularizas. Va bien durante el desarrollo para manejar el código -->
+    <!-- este tipo de ejecutar js si o si se tiene que hacer en un SERVIDOR !!!!!!!!!!!!!!!!!!!!!!!!! -->
+    
+    <script type="module" src="app.js"></script>  
   </head>
 
   <body>
